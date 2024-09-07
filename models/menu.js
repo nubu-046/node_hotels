@@ -32,4 +32,4 @@ const menuItemSchema = new mongoose.Schema({
 //new comment add
 
 const MenuItem = mongoose.model('MenuItem', menuItemSchema);
-module.exports = MenuItem;
+module.exports = MenuItem; 

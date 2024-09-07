@@ -2,9 +2,11 @@ const express = require('express')
 const app = express();
 const db = require('./db');
 
+require('dotenv').config();
 
 
-const port = 3500;
+
+const port = process.env.PORT || 3500;
 
 const bodyParser = require('body-parser');
 app.use(bodyParser.json()); //store data in req.body
